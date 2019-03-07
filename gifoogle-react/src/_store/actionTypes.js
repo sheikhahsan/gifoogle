@@ -1,0 +1,3 @@
+export const GET_TRENDING_GIFS = "GET_TRENDING_GIFS";
+export const GET_RANDOM_GIF = "GET_RANDOM_GIF";
+export const SEARCH_GIF = "SEARCH_GIF";
