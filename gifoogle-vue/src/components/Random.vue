@@ -1,19 +1,25 @@
 <template>
   <div>
     <img
-      :src="`https://media.giphy.com/media/${randomGif.id}/giphy.gif`"
+      :src="fullUrl"
       width="100%"
     />
   </div>
 </template>
 <script>
 import { mapGetters } from 'vuex';
+import * as Util from "../utils";
 export default {
-  name: 'Trending',
+  name: 'Random',
   computed: {
     ...mapGetters({
       randomGif: `randomGif`
-    })
+    }),
+    ...{
+      fullUrl() {
+        return Util.getFullUrl(this.randomGif.id)
+      }
+    }
   }
 };
 </script>

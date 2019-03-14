@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import * as Util from "../utils";
 
 class Random extends Component {
   render() {
@@ -7,7 +8,7 @@ class Random extends Component {
     return (
       <div>
         <img
-          src={`https://media.giphy.com/media/${randomGif.id}/giphy.gif`}
+          src={Util.getFullUrl(randomGif.id)}
           width="100%"
           alt="gif here"
         />

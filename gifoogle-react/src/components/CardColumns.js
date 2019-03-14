@@ -1,4 +1,5 @@
 import React from "react";
+import * as Util from "../utils";
 
 const CardColumns = props => {
   const { gifs = [] } = props;
@@ -12,7 +13,7 @@ const CardColumns = props => {
             style={{ width: '270px', border: 'none'}}
           >
             <img
-              src={`https://media.giphy.com/media/${obj.id}/giphy.gif`}
+              src={Util.getFullUrl(obj.id)}
               width="270px"
               alt="gif"
             />
