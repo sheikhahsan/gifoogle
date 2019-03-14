@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./App.css";
-import Trending from "./containers/Trending";
+import AppRouter from "./router";
 
 class App extends Component {
   render() {
     return (
-      <div className="App container">
-        <Trending />
+      <div className="container">
+        <AppRouter />
       </div>
     );
   }

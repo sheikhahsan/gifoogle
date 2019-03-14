@@ -1,5 +1,23 @@
 body {
   background: #000000;
   color: #ffffff;
-  background-image: url('https://media.giphy.com/media/rXjhFP0JzbU1G/source.gif');
+  background-image: url("https://media.giphy.com/media/rXjhFP0JzbU1G/source.gif");
+}
+
+.nav {
+  padding: 15px 0;
+  align-items: center;
+}
+.nav .navbar-brand {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.nav .nav-link {
+  color: #ffffff;
+}
+
+.nav .nav-link.active,
+.nav .nav-link:hover {
+  color: #007bff;
 }
