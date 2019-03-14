@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as Util from "../utils";
+import { getRandomGif } from "../_store/actions";
 
 class Random extends Component {
+  componentDidMount() {
+    this.props.getRandom();
+  }
+
   render() {
     const { randomGif = {} } = this.props;
     return (
@@ -23,4 +28,10 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(Random);
+const mapDispatchToProps = dispatch => {
+  return {
+    getRandom: query => dispatch(getRandomGif())
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Random);

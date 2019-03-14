@@ -7,7 +7,7 @@ import {
 } from './constants';
 
 const TRENDING_URL = `${API_HOST}${TRENDING_PATH}?api_key=${API_KEY}&limit=30`;
-const RANDOM_URL = `${API_HOST}${RANDOM_PATH}?api_key=${API_KEY}&limit=30`;
+const RANDOM_URL = `${API_HOST}${RANDOM_PATH}?api_key=${API_KEY}`;
 const SEARCH_URL = `${API_HOST}${SEARCH_PATH}?api_key=${API_KEY}&limit=30`;
 const $ = require('jquery');
 
