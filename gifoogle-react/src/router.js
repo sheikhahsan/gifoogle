@@ -19,6 +19,13 @@ const Navbar = () => {
       <NavLink className="nav-link" activeClassName="active" to="/random">
         Random
       </NavLink>
+      <a href="https://giphy.com/" class="ml-auto" target="_blank">
+        <img
+          src={require("./assets/Poweredby_640px-Black_HorizLogo.png")}
+          height="30px"
+          alt="Powered by Giphy"
+        />
+      </a>
     </nav>
   );
 };
