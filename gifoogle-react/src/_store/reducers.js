@@ -2,6 +2,7 @@ import { combineReducers } from "redux";
 import * as types from "./actionTypes";
 
 const gifs = (state = [], action) => {
+
   switch (action.type) {
     case types.GET_RANDOM_GIF:
       return {

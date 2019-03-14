@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import logo from "./logo.svg";
 import "./App.css";
+import Trending from "./components/Trending";
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <Trending />
       </div>
     );
   }
