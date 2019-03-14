@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import Home from "./containers/Home";
 import Trending from "./containers/Trending";
 import Random from "./containers/Random";
@@ -7,18 +7,18 @@ import Random from "./containers/Random";
 const Navbar = () => {
   return (
     <nav className="nav">
-      <Link className="navbar-brand" to="/">
+      <NavLink className="navbar-brand" to="/">
         Gifoogle
-      </Link>
-      <Link className="nav-link" to="/">
+      </NavLink>
+      <NavLink className="nav-link" activeClassName="active" to="/" exact>
         Home
-      </Link>
-      <Link className="nav-link" to="/trending">
+      </NavLink>
+      <NavLink className="nav-link" activeClassName="active" to="/trending">
         Trending
-      </Link>
-      <Link className="nav-link" to="/random">
+      </NavLink>
+      <NavLink className="nav-link" activeClassName="active" to="/random">
         Random
-      </Link>
+      </NavLink>
     </nav>
   );
 };
