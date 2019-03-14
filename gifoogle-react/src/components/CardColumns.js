@@ -13,7 +13,7 @@ const CardColumns = props => {
           >
             <img
               src={Util.getFullUrl(obj.id)}
-              width="270px"
+              width="263px"
               alt="gif"
             />
           </div>

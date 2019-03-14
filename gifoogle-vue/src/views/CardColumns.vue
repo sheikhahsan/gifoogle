@@ -7,7 +7,7 @@
     >
       <img
         :src="fullUrl(obj.id)"
-        width="270px"
+        width="263px"
       />
     </div>
   </div>
@@ -35,7 +35,7 @@ export default {
 .card-columns {
   column-count: 4;
   .card {
-    width: 270px;
+    width: 263px;
     border: none;
   }
 }
