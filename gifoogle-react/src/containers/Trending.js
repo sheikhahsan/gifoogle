@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { getTrendingGifs } from "../_store/actions";
 
 class Trending extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { trendingGifs = [] } = {};// this.props;
     return (
