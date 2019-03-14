@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Trending from "./containers/Trending";
+import Random from "./containers/Random";
 
 function Index() {
   return <h2>Home</h2>;
@@ -32,6 +33,7 @@ function AppRouter() {
         <Navbar />
         <Route path="/" exact component={Index} />
         <Route path="/trending" component={Trending} />
+        <Route path="/random" component={Random} />
       </div>
     </Router>
   );
