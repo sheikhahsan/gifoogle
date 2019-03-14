@@ -8,18 +8,13 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.min.css";
 import rootReducer from "./_store/reducers";
-import {
-  getRandomGif,
-  getTrendingGifs,
-  getGifsByQuery
-} from "./_store/actions";
+import { getRandomGif, getTrendingGifs } from "./_store/actions";
 
 const middleware = [thunk];
 
 const store = createStore(rootReducer, applyMiddleware(...middleware));
 store.dispatch(getRandomGif());
 store.dispatch(getTrendingGifs());
-store.dispatch(getGifsByQuery("cat"));
 
 ReactDOM.render(
   <Provider store={store}>
