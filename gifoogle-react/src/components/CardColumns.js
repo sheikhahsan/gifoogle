@@ -4,13 +4,12 @@ import * as Util from "../utils";
 const CardColumns = props => {
   const { gifs = [] } = props;
   return (
-    <div className="card-columns" style={{columnCount: 4}}>
+    <div className="card-columns">
       {gifs.map(obj => {
         return (
           <div
             className="card"
             key={obj.id}
-            style={{ width: '270px', border: 'none'}}
           >
             <img
               src={Util.getFullUrl(obj.id)}

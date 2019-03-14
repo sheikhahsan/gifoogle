@@ -31,3 +31,11 @@ body {
 .search-form .form-group button {
   border-radius: 0;
 }
+
+.card-columns {
+  column-count: 4 !important;
+}
+.card-columns .card {
+  width: 270px !important;
+  border: none !important;
+}

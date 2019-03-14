@@ -1,10 +1,9 @@
 <template>
-  <div class="card-columns" style="column-count: 4">
+  <div class="card-columns">
     <div
       class="card"
       v-for="obj in gifs"
       :key="obj.id"
-      style="width: 270px; border: none;"
     >
       <img
         :src="fullUrl(obj.id)"
@@ -31,3 +30,13 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.card-columns {
+  column-count: 4;
+  .card {
+    width: 270px;
+    border: none;
+  }
+}
+</style>
