@@ -1,6 +1,6 @@
 body {
   background: #000000;
-  color: #ffffff;
+  color: #ffffff !important;
   background-image: url("https://media.giphy.com/media/rXjhFP0JzbU1G/source.gif");
 }
 
@@ -20,4 +20,14 @@ body {
 .nav .nav-link.active,
 .nav .nav-link:hover {
   color: #007bff;
+}
+
+.search-form .form-group {
+  display: flex;
+}
+.search-form .form-group input {
+  border-radius: 0;
+}
+.search-form .form-group button {
+  border-radius: 0;
 }
