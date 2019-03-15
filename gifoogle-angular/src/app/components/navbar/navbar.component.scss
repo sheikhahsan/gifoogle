@@ -1,0 +1,16 @@
+.nav {
+  padding: 15px 0;
+  align-items: center;
+  .navbar-brand {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .nav-link {
+    color: #ffffff;
+    &.active,
+    &:hover {
+      color: #007bff;
+    }
+  }
+}
