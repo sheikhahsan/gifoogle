@@ -1,3 +1,5 @@
-<p>
-  trending works!
-</p>
+<div class="card-columns">
+  <div class="card" *ngFor="let obj of trendingGifs.data">
+    <img [src]="getFullUrl(obj.id)" width="263px" />
+  </div>
+</div>
