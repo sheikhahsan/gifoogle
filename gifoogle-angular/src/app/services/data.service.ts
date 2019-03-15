@@ -1,5 +1,12 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+import {
+  API_HOST,
+  API_KEY,
+  RANDOM_PATH,
+  SEARCH_PATH,
+  TRENDING_PATH
+} from "./api.constants";
 
 @Injectable({
   providedIn: "root"
@@ -8,12 +15,17 @@ export class DataService {
   constructor(private http: HttpClient) {}
 
   getTrendingGifs() {
-    const API_KEY = "FUOjyQsmrVUVjEAoGfVe538blhej44Sj";
-    const API_HOST = "https://api.giphy.com";
-    const TRENDING_PATH = "/v1/gifs/trending";
-    const RANDOM_PATH = "/v1/gifs/random";
-    const SEARCH_PATH = "/v1/gifs/search";
     const TRENDING_URL = `${API_HOST}${TRENDING_PATH}?api_key=${API_KEY}&limit=30`;
     return this.http.get(TRENDING_URL);
+  }
+
+  getRandomGif() {
+    const RANDOM_URL = `${API_HOST}${RANDOM_PATH}?api_key=${API_KEY}`;
+    return this.http.get(RANDOM_URL);
+  }
+
+  getGifsByQuery(query) {
+    const SEARCH_URL = `${API_HOST}${SEARCH_PATH}?api_key=${API_KEY}&limit=30&q=${query}`;
+    return this.http.get(SEARCH_URL);
   }
 }
