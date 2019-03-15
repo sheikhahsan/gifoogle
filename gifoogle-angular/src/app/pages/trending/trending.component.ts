@@ -17,8 +17,4 @@ export class TrendingComponent implements OnInit {
       console.log(this.trendingGifs);
     });
   }
-
-  getFullUrl = gifId => {
-    return `https://media.giphy.com/media/${gifId}/giphy.gif`;
-  };
 }

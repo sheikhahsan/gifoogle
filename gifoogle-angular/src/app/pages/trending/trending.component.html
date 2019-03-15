@@ -1,5 +1,1 @@
-<div class="card-columns">
-  <div class="card" *ngFor="let obj of trendingGifs.data">
-    <img [src]="getFullUrl(obj.id)" width="263px" />
-  </div>
-</div>
+<app-card-columns [gifs]="trendingGifs.data"></app-card-columns>

@@ -8,6 +8,7 @@ import { HomeComponent } from "./pages/home/home.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { TrendingComponent } from "./pages/trending/trending.component";
 import { RandomComponent } from "./pages/random/random.component";
+import { CardColumnsComponent } from './components/card-columns/card-columns.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RandomComponent } from "./pages/random/random.component";
     HomeComponent,
     NavbarComponent,
     TrendingComponent,
-    RandomComponent
+    RandomComponent,
+    CardColumnsComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
