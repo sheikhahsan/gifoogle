@@ -1,10 +1,13 @@
 # gifoogle
+![gif here](https://media.giphy.com/media/R2EDuYL3XeIQo/giphy.gif)
 
 ## Giphy app in Angular, React.js & Vue.js
 
 A starter web app in popular JavaScript frameworks. **gifoogle-angular, gifoogle-react** and **gifoogle-vue** are three standalone applications developed as a boilerplate for all 3 frameworks.
 
 ## What you get?
+
+![gif here](https://media.giphy.com/media/xYHscQ1Np55i8/giphy.gif)
 
 - A boilerplate to start working in any of the framework
 - Cover necessary elements for building an app
@@ -28,6 +31,7 @@ Replace the newly created **API_KEY** in following files:
 3. [gifoogle-angular/src/app/services/api.constants.ts](https://github.com/sheikhahsan/gifoogle/blob/master/gifoogle-angular/src/app/services/api.constants.ts)
 
 ## Usage
+
 ```
 git clone https://github.com/sheikhahsan/gifoogle.git
 ```
@@ -37,6 +41,8 @@ cd project-folder
 npm install
 npm start
 ```
+
+![gif here](https://media.giphy.com/media/4Zgy9QqzWU8C3ugvCa/giphy.gif)
 
 ## Acknowledgments
 - [GIPHY for Developers](https://developers.giphy.com/)
