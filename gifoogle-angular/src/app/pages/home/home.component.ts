@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from "src/app/services/data.service";
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  searchGifs: Object = {};
 
-  constructor() { }
+  constructor(private data: DataService) {}
 
   ngOnInit() {
+    this.data.search.subscribe(res => {
+      this.searchGifs = res;
+    });
   }
 
 }

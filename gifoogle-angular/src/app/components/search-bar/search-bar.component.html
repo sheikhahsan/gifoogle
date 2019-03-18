@@ -1,0 +1,7 @@
+<form (submit)="onSubmit($event)">
+  <h5>Search all GIPHY GIFs</h5>
+  <div class="form-group">
+    <input name="query-input" class="form-control" [(ngModel)]="query" />
+    <button class="btn btn-primary" type="submit">Search</button>
+  </div>
+</form>

@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable, EventEmitter, Output } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import {
   API_HOST,
@@ -12,6 +12,9 @@ import {
   providedIn: "root"
 })
 export class DataService {
+
+  @Output() search: EventEmitter<Object> = new EventEmitter();
+
   constructor(private http: HttpClient) {}
 
   getTrendingGifs() {
@@ -26,6 +29,8 @@ export class DataService {
 
   getGifsByQuery(query) {
     const SEARCH_URL = `${API_HOST}${SEARCH_PATH}?api_key=${API_KEY}&limit=30&q=${query}`;
-    return this.http.get(SEARCH_URL);
+    this.http.get(SEARCH_URL).subscribe(res=>{
+      this.search.emit(res);
+    });
   }
 }

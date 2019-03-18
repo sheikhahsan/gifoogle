@@ -15,7 +15,6 @@ export class RandomComponent implements OnInit {
   ngOnInit() {
     this.data.getRandomGif().subscribe(res => {
       this.randomGif = res;
-      console.log(this.randomGif);
     });
   }
 

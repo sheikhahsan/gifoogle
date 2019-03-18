@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -9,6 +10,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { TrendingComponent } from "./pages/trending/trending.component";
 import { RandomComponent } from "./pages/random/random.component";
 import { CardColumnsComponent } from './components/card-columns/card-columns.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +19,10 @@ import { CardColumnsComponent } from './components/card-columns/card-columns.com
     NavbarComponent,
     TrendingComponent,
     RandomComponent,
-    CardColumnsComponent
+    CardColumnsComponent,
+    SearchBarComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -14,7 +14,6 @@ export class TrendingComponent implements OnInit {
   ngOnInit() {
     this.data.getTrendingGifs().subscribe(res => {
       this.trendingGifs = res;
-      console.log(this.trendingGifs);
     });
   }
 }
