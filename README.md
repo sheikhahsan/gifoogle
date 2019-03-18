@@ -3,7 +3,7 @@
 
 ## Giphy app in Angular, React.js & Vue.js
 
-A starter web app in popular JavaScript frameworks. **gifoogle-angular, gifoogle-react** and **gifoogle-vue** are three standalone applications developed as a boilerplate for all 3 frameworks.
+This is a starter web app in popular JavaScript frameworks. **gifoogle-angular, gifoogle-react** and **gifoogle-vue** are three standalone applications developed as a boilerplate for all 3 frameworks. If you are new to frontend development or just want to try another framework, this project will help you in many ways.
 
 ## What you get?
 
