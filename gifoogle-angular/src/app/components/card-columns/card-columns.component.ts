@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import * as Util from "src/app/utils";
 
 @Component({
   selector: 'app-card-columns',
@@ -15,7 +16,7 @@ export class CardColumnsComponent implements OnInit {
   }
 
   getFullUrl = gifId => {
-    return `https://media.giphy.com/media/${gifId}/giphy.gif`;
+    return Util.getFullUrl(gifId);
   };
 
 }
