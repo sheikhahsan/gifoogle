@@ -4,6 +4,8 @@
     class="nav-link"
     tag="a"
     routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
   >
     Home
   </a>
@@ -11,6 +13,7 @@
     class="nav-link"
     tag="a"
     routerLink="/trending"
+    routerLinkActive="active"
   >
     Trending
   </a>
@@ -18,6 +21,7 @@
     class="nav-link"
     tag="a"
     routerLink="/random"
+    routerLinkActive="active"
   >
     Random
   </a>
